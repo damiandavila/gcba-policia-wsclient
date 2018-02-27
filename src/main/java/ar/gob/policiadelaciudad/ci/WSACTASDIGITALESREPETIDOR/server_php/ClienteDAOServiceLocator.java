@@ -7,7 +7,7 @@
 
 package ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php;
 
-public class ClienteDAOServiceLocator extends org.apache.axis.client.Service implements ClienteDAOService {
+public class ClienteDAOServiceLocator extends org.apache.axis.client.Service implements ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.ClienteDAOService {
 
     public ClienteDAOServiceLocator() {
     }
@@ -17,29 +17,29 @@ public class ClienteDAOServiceLocator extends org.apache.axis.client.Service imp
         super(config);
     }
 
-    public ClienteDAOServiceLocator(String wsdlLoc, javax.xml.namespace.QName sName) throws javax.xml.rpc.ServiceException {
+    public ClienteDAOServiceLocator(java.lang.String wsdlLoc, javax.xml.namespace.QName sName) throws javax.xml.rpc.ServiceException {
         super(wsdlLoc, sName);
     }
 
     // Use to get a proxy class for ClienteDAOPort
-    private String ClienteDAOPort_address = "http://ci.policiadelaciudad.gob.ar/WSACTASDIGITALESREPETIDOR/server.php";
+    private java.lang.String ClienteDAOPort_address = "http://ci.policiadelaciudad.gob.ar/WSACTASDIGITALESREPETIDOR/server.php";
 
-    public String getClienteDAOPortAddress() {
+    public java.lang.String getClienteDAOPortAddress() {
         return ClienteDAOPort_address;
     }
 
     // The WSDD service name defaults to the port name.
-    private String ClienteDAOPortWSDDServiceName = "ClienteDAOPort";
+    private java.lang.String ClienteDAOPortWSDDServiceName = "ClienteDAOPort";
 
-    public String getClienteDAOPortWSDDServiceName() {
+    public java.lang.String getClienteDAOPortWSDDServiceName() {
         return ClienteDAOPortWSDDServiceName;
     }
 
-    public void setClienteDAOPortWSDDServiceName(String name) {
+    public void setClienteDAOPortWSDDServiceName(java.lang.String name) {
         ClienteDAOPortWSDDServiceName = name;
     }
 
-    public ClienteDAOPort getClienteDAOPort() throws javax.xml.rpc.ServiceException {
+    public ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.ClienteDAOPort getClienteDAOPort() throws javax.xml.rpc.ServiceException {
        java.net.URL endpoint;
         try {
             endpoint = new java.net.URL(ClienteDAOPort_address);
@@ -50,9 +50,9 @@ public class ClienteDAOServiceLocator extends org.apache.axis.client.Service imp
         return getClienteDAOPort(endpoint);
     }
 
-    public ClienteDAOPort getClienteDAOPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
+    public ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.ClienteDAOPort getClienteDAOPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException {
         try {
-            ClienteDAOBindingStub _stub = new ClienteDAOBindingStub(portAddress, this);
+            ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.ClienteDAOBindingStub _stub = new ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.ClienteDAOBindingStub(portAddress, this);
             _stub.setPortName(getClienteDAOPortWSDDServiceName());
             return _stub;
         }
@@ -61,7 +61,7 @@ public class ClienteDAOServiceLocator extends org.apache.axis.client.Service imp
         }
     }
 
-    public void setClienteDAOPortEndpointAddress(String address) {
+    public void setClienteDAOPortEndpointAddress(java.lang.String address) {
         ClienteDAOPort_address = address;
     }
 
@@ -72,13 +72,13 @@ public class ClienteDAOServiceLocator extends org.apache.axis.client.Service imp
      */
     public java.rmi.Remote getPort(Class serviceEndpointInterface) throws javax.xml.rpc.ServiceException {
         try {
-            if (ClienteDAOPort.class.isAssignableFrom(serviceEndpointInterface)) {
-                ClienteDAOBindingStub _stub = new ClienteDAOBindingStub(new java.net.URL(ClienteDAOPort_address), this);
+            if (ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.ClienteDAOPort.class.isAssignableFrom(serviceEndpointInterface)) {
+                ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.ClienteDAOBindingStub _stub = new ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.ClienteDAOBindingStub(new java.net.URL(ClienteDAOPort_address), this);
                 _stub.setPortName(getClienteDAOPortWSDDServiceName());
                 return _stub;
             }
         }
-        catch (Throwable t) {
+        catch (java.lang.Throwable t) {
             throw new javax.xml.rpc.ServiceException(t);
         }
         throw new javax.xml.rpc.ServiceException("There is no stub implementation for the interface:  " + (serviceEndpointInterface == null ? "null" : serviceEndpointInterface.getName()));
@@ -93,7 +93,7 @@ public class ClienteDAOServiceLocator extends org.apache.axis.client.Service imp
         if (portName == null) {
             return getPort(serviceEndpointInterface);
         }
-        String inputPortName = portName.getLocalPart();
+        java.lang.String inputPortName = portName.getLocalPart();
         if ("ClienteDAOPort".equals(inputPortName)) {
             return getClienteDAOPort();
         }
@@ -121,7 +121,7 @@ public class ClienteDAOServiceLocator extends org.apache.axis.client.Service imp
     /**
     * Set the endpoint address for the specified port name.
     */
-    public void setEndpointAddress(String portName, String address) throws javax.xml.rpc.ServiceException {
+    public void setEndpointAddress(java.lang.String portName, java.lang.String address) throws javax.xml.rpc.ServiceException {
         
 if ("ClienteDAOPort".equals(portName)) {
             setClienteDAOPortEndpointAddress(address);
@@ -135,7 +135,7 @@ if ("ClienteDAOPort".equals(portName)) {
     /**
     * Set the endpoint address for the specified port name.
     */
-    public void setEndpointAddress(javax.xml.namespace.QName portName, String address) throws javax.xml.rpc.ServiceException {
+    public void setEndpointAddress(javax.xml.namespace.QName portName, java.lang.String address) throws javax.xml.rpc.ServiceException {
         setEndpointAddress(portName.getLocalPart(), address);
     }
 

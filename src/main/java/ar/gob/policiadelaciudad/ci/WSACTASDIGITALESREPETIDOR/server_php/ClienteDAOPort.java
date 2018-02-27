@@ -12,10 +12,10 @@ public interface ClienteDAOPort extends java.rmi.Remote {
     /**
      * Metodo de prueba de Web Service
      */
-    public Existe testWS() throws java.rmi.RemoteException;
+    public ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.Existe testWS() throws java.rmi.RemoteException;
 
     /**
      * Metodo para validar un Usuario para Actas Digitales
      */
-    public Usuario validarAcc(String usu, String clv, String pc) throws java.rmi.RemoteException;
+    public ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.Usuario validarAcc(java.lang.String usu, java.lang.String clv, java.lang.String pc) throws java.rmi.RemoteException;
 }

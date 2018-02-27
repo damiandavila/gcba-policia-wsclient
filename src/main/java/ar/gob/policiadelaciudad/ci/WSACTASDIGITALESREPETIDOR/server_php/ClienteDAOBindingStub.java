@@ -7,7 +7,7 @@
 
 package ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php;
 
-public class ClienteDAOBindingStub extends org.apache.axis.client.Stub implements ClienteDAOPort {
+public class ClienteDAOBindingStub extends org.apache.axis.client.Stub implements ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.ClienteDAOPort {
     private java.util.Vector cachedSerClasses = new java.util.Vector();
     private java.util.Vector cachedSerQNames = new java.util.Vector();
     private java.util.Vector cachedSerFactories = new java.util.Vector();
@@ -26,7 +26,7 @@ public class ClienteDAOBindingStub extends org.apache.axis.client.Stub implement
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("TestWS");
         oper.setReturnType(new javax.xml.namespace.QName("http://ci.policiadelaciudad.gob.ar/WSACTASDIGITALESREPETIDOR/server.php", "Existe"));
-        oper.setReturnClass(Existe.class);
+        oper.setReturnClass(ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.Existe.class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.RPC);
         oper.setUse(org.apache.axis.constants.Use.ENCODED);
@@ -34,14 +34,14 @@ public class ClienteDAOBindingStub extends org.apache.axis.client.Stub implement
 
         oper = new org.apache.axis.description.OperationDesc();
         oper.setName("validarAcc");
-        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "usu"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), String.class, false, false);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "usu"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
         oper.addParameter(param);
-        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "clv"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), String.class, false, false);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "clv"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
         oper.addParameter(param);
-        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "pc"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), String.class, false, false);
+        param = new org.apache.axis.description.ParameterDesc(new javax.xml.namespace.QName("", "pc"), org.apache.axis.description.ParameterDesc.IN, new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"), java.lang.String.class, false, false);
         oper.addParameter(param);
         oper.setReturnType(new javax.xml.namespace.QName("http://ci.policiadelaciudad.gob.ar/WSACTASDIGITALESREPETIDOR/server.php", "Usuario"));
-        oper.setReturnClass(Usuario.class);
+        oper.setReturnClass(ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.Usuario.class);
         oper.setReturnQName(new javax.xml.namespace.QName("", "return"));
         oper.setStyle(org.apache.axis.constants.Style.RPC);
         oper.setUse(org.apache.axis.constants.Use.ENCODED);
@@ -65,29 +65,29 @@ public class ClienteDAOBindingStub extends org.apache.axis.client.Stub implement
             super.service = service;
         }
         ((org.apache.axis.client.Service)super.service).setTypeMappingVersion("1.2");
-            Class cls;
+            java.lang.Class cls;
             javax.xml.namespace.QName qName;
             javax.xml.namespace.QName qName2;
-            Class beansf = org.apache.axis.encoding.ser.BeanSerializerFactory.class;
-            Class beandf = org.apache.axis.encoding.ser.BeanDeserializerFactory.class;
-            Class enumsf = org.apache.axis.encoding.ser.EnumSerializerFactory.class;
-            Class enumdf = org.apache.axis.encoding.ser.EnumDeserializerFactory.class;
-            Class arraysf = org.apache.axis.encoding.ser.ArraySerializerFactory.class;
-            Class arraydf = org.apache.axis.encoding.ser.ArrayDeserializerFactory.class;
-            Class simplesf = org.apache.axis.encoding.ser.SimpleSerializerFactory.class;
-            Class simpledf = org.apache.axis.encoding.ser.SimpleDeserializerFactory.class;
-            Class simplelistsf = org.apache.axis.encoding.ser.SimpleListSerializerFactory.class;
-            Class simplelistdf = org.apache.axis.encoding.ser.SimpleListDeserializerFactory.class;
+            java.lang.Class beansf = org.apache.axis.encoding.ser.BeanSerializerFactory.class;
+            java.lang.Class beandf = org.apache.axis.encoding.ser.BeanDeserializerFactory.class;
+            java.lang.Class enumsf = org.apache.axis.encoding.ser.EnumSerializerFactory.class;
+            java.lang.Class enumdf = org.apache.axis.encoding.ser.EnumDeserializerFactory.class;
+            java.lang.Class arraysf = org.apache.axis.encoding.ser.ArraySerializerFactory.class;
+            java.lang.Class arraydf = org.apache.axis.encoding.ser.ArrayDeserializerFactory.class;
+            java.lang.Class simplesf = org.apache.axis.encoding.ser.SimpleSerializerFactory.class;
+            java.lang.Class simpledf = org.apache.axis.encoding.ser.SimpleDeserializerFactory.class;
+            java.lang.Class simplelistsf = org.apache.axis.encoding.ser.SimpleListSerializerFactory.class;
+            java.lang.Class simplelistdf = org.apache.axis.encoding.ser.SimpleListDeserializerFactory.class;
             qName = new javax.xml.namespace.QName("http://ci.policiadelaciudad.gob.ar/WSACTASDIGITALESREPETIDOR/server.php", "Existe");
             cachedSerQNames.add(qName);
-            cls = Existe.class;
+            cls = ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.Existe.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
 
             qName = new javax.xml.namespace.QName("http://ci.policiadelaciudad.gob.ar/WSACTASDIGITALESREPETIDOR/server.php", "Usuario");
             cachedSerQNames.add(qName);
-            cls = Usuario.class;
+            cls = ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.Usuario.class;
             cachedSerClasses.add(cls);
             cachedSerFactories.add(beansf);
             cachedDeserFactories.add(beandf);
@@ -117,7 +117,7 @@ public class ClienteDAOBindingStub extends org.apache.axis.client.Stub implement
             }
             java.util.Enumeration keys = super.cachedProperties.keys();
             while (keys.hasMoreElements()) {
-                String key = (String) keys.nextElement();
+                java.lang.String key = (java.lang.String) keys.nextElement();
                 _call.setProperty(key, super.cachedProperties.get(key));
             }
             // All the type mapping information is registered
@@ -131,14 +131,14 @@ public class ClienteDAOBindingStub extends org.apache.axis.client.Stub implement
                     _call.setSOAPVersion(org.apache.axis.soap.SOAPConstants.SOAP11_CONSTANTS);
                     _call.setEncodingStyle(org.apache.axis.Constants.URI_SOAP11_ENC);
                     for (int i = 0; i < cachedSerFactories.size(); ++i) {
-                        Class cls = (Class) cachedSerClasses.get(i);
+                        java.lang.Class cls = (java.lang.Class) cachedSerClasses.get(i);
                         javax.xml.namespace.QName qName =
                                 (javax.xml.namespace.QName) cachedSerQNames.get(i);
-                        Object x = cachedSerFactories.get(i);
+                        java.lang.Object x = cachedSerFactories.get(i);
                         if (x instanceof Class) {
-                            Class sf = (Class)
+                            java.lang.Class sf = (java.lang.Class)
                                  cachedSerFactories.get(i);
-                            Class df = (Class)
+                            java.lang.Class df = (java.lang.Class)
                                  cachedDeserFactories.get(i);
                             _call.registerTypeMapping(cls, qName, sf, df, false);
                         }
@@ -154,12 +154,12 @@ public class ClienteDAOBindingStub extends org.apache.axis.client.Stub implement
             }
             return _call;
         }
-        catch (Throwable _t) {
+        catch (java.lang.Throwable _t) {
             throw new org.apache.axis.AxisFault("Failure trying to get the Call object", _t);
         }
     }
 
-    public Existe testWS() throws java.rmi.RemoteException {
+    public ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.Existe testWS() throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -172,7 +172,7 @@ public class ClienteDAOBindingStub extends org.apache.axis.client.Stub implement
 
         setRequestHeaders(_call);
         setAttachments(_call);
- try {        Object _resp = _call.invoke(new Object[] {});
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {});
 
         if (_resp instanceof java.rmi.RemoteException) {
             throw (java.rmi.RemoteException)_resp;
@@ -180,9 +180,9 @@ public class ClienteDAOBindingStub extends org.apache.axis.client.Stub implement
         else {
             extractAttachments(_call);
             try {
-                return (Existe) _resp;
-            } catch (Exception _exception) {
-                return (Existe) org.apache.axis.utils.JavaUtils.convert(_resp, Existe.class);
+                return (ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.Existe) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.Existe) org.apache.axis.utils.JavaUtils.convert(_resp, ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.Existe.class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -190,7 +190,7 @@ public class ClienteDAOBindingStub extends org.apache.axis.client.Stub implement
 }
     }
 
-    public Usuario validarAcc(String usu, String clv, String pc) throws java.rmi.RemoteException {
+    public ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.Usuario validarAcc(java.lang.String usu, java.lang.String clv, java.lang.String pc) throws java.rmi.RemoteException {
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -203,7 +203,7 @@ public class ClienteDAOBindingStub extends org.apache.axis.client.Stub implement
 
         setRequestHeaders(_call);
         setAttachments(_call);
- try {        Object _resp = _call.invoke(new Object[] {usu, clv, pc});
+ try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {usu, clv, pc});
 
         if (_resp instanceof java.rmi.RemoteException) {
             throw (java.rmi.RemoteException)_resp;
@@ -211,9 +211,9 @@ public class ClienteDAOBindingStub extends org.apache.axis.client.Stub implement
         else {
             extractAttachments(_call);
             try {
-                return (Usuario) _resp;
-            } catch (Exception _exception) {
-                return (Usuario) org.apache.axis.utils.JavaUtils.convert(_resp, Usuario.class);
+                return (ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.Usuario) _resp;
+            } catch (java.lang.Exception _exception) {
+                return (ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.Usuario) org.apache.axis.utils.JavaUtils.convert(_resp, ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.Usuario.class);
             }
         }
   } catch (org.apache.axis.AxisFault axisFaultException) {
@@ -221,10 +221,10 @@ public class ClienteDAOBindingStub extends org.apache.axis.client.Stub implement
 }
     }
 
-
     public static void main(String[] args) throws Exception {
         ClienteDAOServiceLocator locator = new ClienteDAOServiceLocator();
         Usuario usuario = locator.getClienteDAOPort().validarAcc("21072081", "Asd4567", "assasda");
         System.out.println(usuario.getErrorDesc());
     }
+
 }

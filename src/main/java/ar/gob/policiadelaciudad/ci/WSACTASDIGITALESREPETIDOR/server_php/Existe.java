@@ -8,13 +8,13 @@
 package ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php;
 
 public class Existe  implements java.io.Serializable {
-    private String existe;
+    private java.lang.String existe;
 
     public Existe() {
     }
 
     public Existe(
-           String existe) {
+           java.lang.String existe) {
            this.existe = existe;
     }
 
@@ -24,7 +24,7 @@ public class Existe  implements java.io.Serializable {
      * 
      * @return existe
      */
-    public String getExiste() {
+    public java.lang.String getExiste() {
         return existe;
     }
 
@@ -34,12 +34,12 @@ public class Existe  implements java.io.Serializable {
      * 
      * @param existe
      */
-    public void setExiste(String existe) {
+    public void setExiste(java.lang.String existe) {
         this.existe = existe;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof Existe)) return false;
         Existe other = (Existe) obj;
         if (obj == null) return false;
@@ -96,8 +96,8 @@ public class Existe  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
         return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
@@ -108,8 +108,8 @@ public class Existe  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
         return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(

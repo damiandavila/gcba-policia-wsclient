@@ -8,9 +8,9 @@
 package ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php;
 
 public interface ClienteDAOService extends javax.xml.rpc.Service {
-    public String getClienteDAOPortAddress();
+    public java.lang.String getClienteDAOPortAddress();
 
-    public ClienteDAOPort getClienteDAOPort() throws javax.xml.rpc.ServiceException;
+    public ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.ClienteDAOPort getClienteDAOPort() throws javax.xml.rpc.ServiceException;
 
-    public ClienteDAOPort getClienteDAOPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException;
+    public ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.ClienteDAOPort getClienteDAOPort(java.net.URL portAddress) throws javax.xml.rpc.ServiceException;
 }

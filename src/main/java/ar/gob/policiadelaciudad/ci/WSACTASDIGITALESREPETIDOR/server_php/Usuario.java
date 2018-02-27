@@ -8,49 +8,55 @@
 package ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php;
 
 public class Usuario  implements java.io.Serializable {
-    private String gr_desc;
+    private java.lang.String gr_desc;
 
-    private String usua_permiso;
+    private java.lang.String usua_permiso;
 
-    private String per_apellido;
+    private java.lang.String per_apellido;
 
-    private String usu_password;
+    private java.lang.String usu_password;
 
-    private String usu_legajo;
+    private java.lang.String usu_legajo;
 
-    private String per_nombre;
+    private java.lang.String per_nombre;
 
-    private String per_destino;
+    private java.lang.String per_destino;
 
-    private String dep_desc;
+    private java.lang.String dep_desc;
 
-    private String error;
+    private java.lang.String error;
 
-    private String errorDesc;
+    private java.lang.String errorDesc;
 
-    private Integer apli_id;
+    private java.lang.Integer apli_id;
 
-    private String apli_desc;
+    private java.lang.String apli_desc;
 
-    private String per_doc;
+    private java.lang.String per_doc;
+
+    private java.lang.String email;
+
+    private java.lang.String per_cuil;
 
     public Usuario() {
     }
 
     public Usuario(
-           String gr_desc,
-           String usua_permiso,
-           String per_apellido,
-           String usu_password,
-           String usu_legajo,
-           String per_nombre,
-           String per_destino,
-           String dep_desc,
-           String error,
-           String errorDesc,
-           Integer apli_id,
-           String apli_desc,
-           String per_doc) {
+           java.lang.String gr_desc,
+           java.lang.String usua_permiso,
+           java.lang.String per_apellido,
+           java.lang.String usu_password,
+           java.lang.String usu_legajo,
+           java.lang.String per_nombre,
+           java.lang.String per_destino,
+           java.lang.String dep_desc,
+           java.lang.String error,
+           java.lang.String errorDesc,
+           java.lang.Integer apli_id,
+           java.lang.String apli_desc,
+           java.lang.String per_doc,
+           java.lang.String email,
+           java.lang.String per_cuil) {
            this.gr_desc = gr_desc;
            this.usua_permiso = usua_permiso;
            this.per_apellido = per_apellido;
@@ -64,6 +70,8 @@ public class Usuario  implements java.io.Serializable {
            this.apli_id = apli_id;
            this.apli_desc = apli_desc;
            this.per_doc = per_doc;
+           this.email = email;
+           this.per_cuil = per_cuil;
     }
 
 
@@ -72,7 +80,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @return gr_desc
      */
-    public String getGr_desc() {
+    public java.lang.String getGr_desc() {
         return gr_desc;
     }
 
@@ -82,7 +90,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @param gr_desc
      */
-    public void setGr_desc(String gr_desc) {
+    public void setGr_desc(java.lang.String gr_desc) {
         this.gr_desc = gr_desc;
     }
 
@@ -92,7 +100,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @return usua_permiso
      */
-    public String getUsua_permiso() {
+    public java.lang.String getUsua_permiso() {
         return usua_permiso;
     }
 
@@ -102,7 +110,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @param usua_permiso
      */
-    public void setUsua_permiso(String usua_permiso) {
+    public void setUsua_permiso(java.lang.String usua_permiso) {
         this.usua_permiso = usua_permiso;
     }
 
@@ -112,7 +120,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @return per_apellido
      */
-    public String getPer_apellido() {
+    public java.lang.String getPer_apellido() {
         return per_apellido;
     }
 
@@ -122,7 +130,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @param per_apellido
      */
-    public void setPer_apellido(String per_apellido) {
+    public void setPer_apellido(java.lang.String per_apellido) {
         this.per_apellido = per_apellido;
     }
 
@@ -132,7 +140,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @return usu_password
      */
-    public String getUsu_password() {
+    public java.lang.String getUsu_password() {
         return usu_password;
     }
 
@@ -142,7 +150,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @param usu_password
      */
-    public void setUsu_password(String usu_password) {
+    public void setUsu_password(java.lang.String usu_password) {
         this.usu_password = usu_password;
     }
 
@@ -152,7 +160,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @return usu_legajo
      */
-    public String getUsu_legajo() {
+    public java.lang.String getUsu_legajo() {
         return usu_legajo;
     }
 
@@ -162,7 +170,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @param usu_legajo
      */
-    public void setUsu_legajo(String usu_legajo) {
+    public void setUsu_legajo(java.lang.String usu_legajo) {
         this.usu_legajo = usu_legajo;
     }
 
@@ -172,7 +180,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @return per_nombre
      */
-    public String getPer_nombre() {
+    public java.lang.String getPer_nombre() {
         return per_nombre;
     }
 
@@ -182,7 +190,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @param per_nombre
      */
-    public void setPer_nombre(String per_nombre) {
+    public void setPer_nombre(java.lang.String per_nombre) {
         this.per_nombre = per_nombre;
     }
 
@@ -192,7 +200,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @return per_destino
      */
-    public String getPer_destino() {
+    public java.lang.String getPer_destino() {
         return per_destino;
     }
 
@@ -202,7 +210,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @param per_destino
      */
-    public void setPer_destino(String per_destino) {
+    public void setPer_destino(java.lang.String per_destino) {
         this.per_destino = per_destino;
     }
 
@@ -212,7 +220,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @return dep_desc
      */
-    public String getDep_desc() {
+    public java.lang.String getDep_desc() {
         return dep_desc;
     }
 
@@ -222,7 +230,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @param dep_desc
      */
-    public void setDep_desc(String dep_desc) {
+    public void setDep_desc(java.lang.String dep_desc) {
         this.dep_desc = dep_desc;
     }
 
@@ -232,7 +240,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @return error
      */
-    public String getError() {
+    public java.lang.String getError() {
         return error;
     }
 
@@ -242,7 +250,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @param error
      */
-    public void setError(String error) {
+    public void setError(java.lang.String error) {
         this.error = error;
     }
 
@@ -252,7 +260,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @return errorDesc
      */
-    public String getErrorDesc() {
+    public java.lang.String getErrorDesc() {
         return errorDesc;
     }
 
@@ -262,7 +270,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @param errorDesc
      */
-    public void setErrorDesc(String errorDesc) {
+    public void setErrorDesc(java.lang.String errorDesc) {
         this.errorDesc = errorDesc;
     }
 
@@ -272,7 +280,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @return apli_id
      */
-    public Integer getApli_id() {
+    public java.lang.Integer getApli_id() {
         return apli_id;
     }
 
@@ -282,7 +290,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @param apli_id
      */
-    public void setApli_id(Integer apli_id) {
+    public void setApli_id(java.lang.Integer apli_id) {
         this.apli_id = apli_id;
     }
 
@@ -292,7 +300,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @return apli_desc
      */
-    public String getApli_desc() {
+    public java.lang.String getApli_desc() {
         return apli_desc;
     }
 
@@ -302,7 +310,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @param apli_desc
      */
-    public void setApli_desc(String apli_desc) {
+    public void setApli_desc(java.lang.String apli_desc) {
         this.apli_desc = apli_desc;
     }
 
@@ -312,7 +320,7 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @return per_doc
      */
-    public String getPer_doc() {
+    public java.lang.String getPer_doc() {
         return per_doc;
     }
 
@@ -322,12 +330,52 @@ public class Usuario  implements java.io.Serializable {
      * 
      * @param per_doc
      */
-    public void setPer_doc(String per_doc) {
+    public void setPer_doc(java.lang.String per_doc) {
         this.per_doc = per_doc;
     }
 
-    private Object __equalsCalc = null;
-    public synchronized boolean equals(Object obj) {
+
+    /**
+     * Gets the email value for this Usuario.
+     * 
+     * @return email
+     */
+    public java.lang.String getEmail() {
+        return email;
+    }
+
+
+    /**
+     * Sets the email value for this Usuario.
+     * 
+     * @param email
+     */
+    public void setEmail(java.lang.String email) {
+        this.email = email;
+    }
+
+
+    /**
+     * Gets the per_cuil value for this Usuario.
+     * 
+     * @return per_cuil
+     */
+    public java.lang.String getPer_cuil() {
+        return per_cuil;
+    }
+
+
+    /**
+     * Sets the per_cuil value for this Usuario.
+     * 
+     * @param per_cuil
+     */
+    public void setPer_cuil(java.lang.String per_cuil) {
+        this.per_cuil = per_cuil;
+    }
+
+    private java.lang.Object __equalsCalc = null;
+    public synchronized boolean equals(java.lang.Object obj) {
         if (!(obj instanceof Usuario)) return false;
         Usuario other = (Usuario) obj;
         if (obj == null) return false;
@@ -376,7 +424,13 @@ public class Usuario  implements java.io.Serializable {
               this.apli_desc.equals(other.getApli_desc()))) &&
             ((this.per_doc==null && other.getPer_doc()==null) || 
              (this.per_doc!=null &&
-              this.per_doc.equals(other.getPer_doc())));
+              this.per_doc.equals(other.getPer_doc()))) &&
+            ((this.email==null && other.getEmail()==null) || 
+             (this.email!=null &&
+              this.email.equals(other.getEmail()))) &&
+            ((this.per_cuil==null && other.getPer_cuil()==null) || 
+             (this.per_cuil!=null &&
+              this.per_cuil.equals(other.getPer_cuil())));
         __equalsCalc = null;
         return _equals;
     }
@@ -426,6 +480,12 @@ public class Usuario  implements java.io.Serializable {
         }
         if (getPer_doc() != null) {
             _hashCode += getPer_doc().hashCode();
+        }
+        if (getEmail() != null) {
+            _hashCode += getEmail().hashCode();
+        }
+        if (getPer_cuil() != null) {
+            _hashCode += getPer_cuil().hashCode();
         }
         __hashCodeCalc = false;
         return _hashCode;
@@ -515,6 +575,18 @@ public class Usuario  implements java.io.Serializable {
         elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
         elemField.setNillable(true);
         typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("email");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "email"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
+        elemField = new org.apache.axis.description.ElementDesc();
+        elemField.setFieldName("per_cuil");
+        elemField.setXmlName(new javax.xml.namespace.QName("", "per_cuil"));
+        elemField.setXmlType(new javax.xml.namespace.QName("http://www.w3.org/2001/XMLSchema", "string"));
+        elemField.setNillable(true);
+        typeDesc.addFieldDesc(elemField);
     }
 
     /**
@@ -528,8 +600,8 @@ public class Usuario  implements java.io.Serializable {
      * Get Custom Serializer
      */
     public static org.apache.axis.encoding.Serializer getSerializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
         return 
           new  org.apache.axis.encoding.ser.BeanSerializer(
@@ -540,8 +612,8 @@ public class Usuario  implements java.io.Serializable {
      * Get Custom Deserializer
      */
     public static org.apache.axis.encoding.Deserializer getDeserializer(
-           String mechType,
-           Class _javaType,
+           java.lang.String mechType, 
+           java.lang.Class _javaType,  
            javax.xml.namespace.QName _xmlType) {
         return 
           new  org.apache.axis.encoding.ser.BeanDeserializer(
