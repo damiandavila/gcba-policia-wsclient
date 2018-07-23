@@ -496,7 +496,7 @@ public class Usuario  implements java.io.Serializable {
         new org.apache.axis.description.TypeDesc(Usuario.class, true);
 
     static {
-        typeDesc.setXmlType(new javax.xml.namespace.QName("http://ci.policiadelaciudad.gob.ar/WSACTASDIGITALESREPETIDOR/server.php", "Usuario"));
+        typeDesc.setXmlType(new javax.xml.namespace.QName("https://ci.policiadelaciudad.gob.ar/WSACTASDIGITALESREPETIDOR/server.php", "Usuario"));
         org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("gr_desc");
         elemField.setXmlName(new javax.xml.namespace.QName("", "gr_desc"));

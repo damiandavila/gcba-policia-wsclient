@@ -76,7 +76,7 @@ public class Existe  implements java.io.Serializable {
         new org.apache.axis.description.TypeDesc(Existe.class, true);
 
     static {
-        typeDesc.setXmlType(new javax.xml.namespace.QName("http://ci.policiadelaciudad.gob.ar/WSACTASDIGITALESREPETIDOR/server.php", "Existe"));
+        typeDesc.setXmlType(new javax.xml.namespace.QName("https://ci.policiadelaciudad.gob.ar/WSACTASDIGITALESREPETIDOR/server.php", "Existe"));
         org.apache.axis.description.ElementDesc elemField = new org.apache.axis.description.ElementDesc();
         elemField.setFieldName("existe");
         elemField.setXmlName(new javax.xml.namespace.QName("", "Existe"));

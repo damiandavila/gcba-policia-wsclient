@@ -22,7 +22,7 @@ public class ClienteDAOServiceLocator extends org.apache.axis.client.Service imp
     }
 
     // Use to get a proxy class for ClienteDAOPort
-    private java.lang.String ClienteDAOPort_address = "http://ci.policiadelaciudad.gob.ar/WSACTASDIGITALESREPETIDOR/server.php";
+    private java.lang.String ClienteDAOPort_address = "https://ci.policiadelaciudad.gob.ar/WSACTASDIGITALESREPETIDOR/server.php";
 
     public java.lang.String getClienteDAOPortAddress() {
         return ClienteDAOPort_address;
@@ -42,6 +42,7 @@ public class ClienteDAOServiceLocator extends org.apache.axis.client.Service imp
     public ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.ClienteDAOPort getClienteDAOPort() throws javax.xml.rpc.ServiceException {
        java.net.URL endpoint;
         try {
+            System.out.println("======= getClienteDAOPort() - ClienteDAOPort_address: " + ClienteDAOPort_address);
             endpoint = new java.net.URL(ClienteDAOPort_address);
         }
         catch (java.net.MalformedURLException e) {
@@ -105,7 +106,7 @@ public class ClienteDAOServiceLocator extends org.apache.axis.client.Service imp
     }
 
     public javax.xml.namespace.QName getServiceName() {
-        return new javax.xml.namespace.QName("http://ci.policiadelaciudad.gob.ar/WSACTASDIGITALESREPETIDOR/server.php", "ClienteDAOService");
+        return new javax.xml.namespace.QName("https://ci.policiadelaciudad.gob.ar/WSACTASDIGITALESREPETIDOR/server.php", "ClienteDAOService");
     }
 
     private java.util.HashSet ports = null;
@@ -113,7 +114,7 @@ public class ClienteDAOServiceLocator extends org.apache.axis.client.Service imp
     public java.util.Iterator getPorts() {
         if (ports == null) {
             ports = new java.util.HashSet();
-            ports.add(new javax.xml.namespace.QName("http://ci.policiadelaciudad.gob.ar/WSACTASDIGITALESREPETIDOR/server.php", "ClienteDAOPort"));
+            ports.add(new javax.xml.namespace.QName("https://ci.policiadelaciudad.gob.ar/WSACTASDIGITALESREPETIDOR/server.php", "ClienteDAOPort"));
         }
         return ports.iterator();
     }
