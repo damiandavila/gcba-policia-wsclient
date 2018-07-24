@@ -191,6 +191,7 @@ public class ClienteDAOBindingStub extends org.apache.axis.client.Stub implement
     }
 
     public ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.Usuario validarAcc(java.lang.String usu, java.lang.String clv, java.lang.String pc) throws java.rmi.RemoteException {
+        System.out.println("========== validarAcc - usuario: " + usu );
         if (super.cachedEndpoint == null) {
             throw new org.apache.axis.NoEndPointException();
         }
@@ -206,6 +207,7 @@ public class ClienteDAOBindingStub extends org.apache.axis.client.Stub implement
  try {        java.lang.Object _resp = _call.invoke(new java.lang.Object[] {usu, clv, pc});
     System.out.println("========== _resp = " + _resp );
         if (_resp instanceof java.rmi.RemoteException) {
+            System.out.println("========== validarAcc - remoteException: " + ((java.rmi.RemoteException)_resp).getMessage());
             throw (java.rmi.RemoteException)_resp;
         }
         else {
@@ -213,6 +215,7 @@ public class ClienteDAOBindingStub extends org.apache.axis.client.Stub implement
             try {
                 return (ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.Usuario) _resp;
             } catch (java.lang.Exception _exception) {
+                System.out.println("========== validarAcc - _exception: " +  _exception.getMessage() );
                 return (ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.Usuario) org.apache.axis.utils.JavaUtils.convert(_resp, ar.gob.policiadelaciudad.ci.WSACTASDIGITALESREPETIDOR.server_php.Usuario.class);
             }
         }
